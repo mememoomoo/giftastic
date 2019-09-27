@@ -26,6 +26,7 @@ $(document).ready(function () {
         for (var i = 0; i < animals.length; i++) {
             var newButtons = $("<button>");
             newButtons.addClass("animal");
+            newButtons.addClass("btn btn-outline-dark mr-3 mb-1")
             newButtons.attr("data-name", animals[i]);
             newButtons.text(animals[i]);
             $("#buttons").append(newButtons);
